@@ -13,8 +13,7 @@ yeni_vakalar=float(input("Tümör boyutunu giriniz: "))
 yeni_vaka_2d = np.array([[yeni_vakalar]])
 tahminler=model.predict(yeni_vaka_2d)
 olasiliklar=model.predict_proba(yeni_vaka_2d)
-
-# 'yeni_vakalar' (boyut) yerine 'tahminler' (0 veya 1 sonucu) değişkenini kontrol etmelisin
+
 sonuc = "Kötü Huylu (Malignant)" if tahminler[0] == 1 else "İyi Huylu (Benign)"
 print("--- Analiz Sonucu ---")
 print(f"Tümör Boyutu: {yeni_vakalar} cm")

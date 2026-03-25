@@ -10,7 +10,7 @@ based on its size (cm) using Logistic Regression.
 
 ## 🧠 How It Works
 
-The model passes the tumor size input through a **Sigmoid Function**, 
+The model passes the tumor size input through a **sigmoid function**, 
 producing a probability value between 0 and 1.
 ```
 P > 0.5  →  🔴 Malignant (Kötü Huylu)
